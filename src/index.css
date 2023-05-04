@@ -1,0 +1,191 @@
+
+:root{
+    --logo-color: #ff00ff;
+    --hover-color: rgb(164, 0, 164);
+    --dark-color: #6946FF;
+    --hover-dark-color: #3b22ac;
+    --light-color: #EED3FF;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.main-container{
+    display: flex;
+    flex-direction: column;
+}
+
+.app-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header{
+    height: 1rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#logo{
+    height: 1.5rem;
+    width: 1.5rem;
+}
+section span{
+    font-weight:400;
+    font-size: 2rem;
+    color: var(--dark-color);
+}
+
+.header section ul{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    list-style: none;
+    justify-content: space-between;
+    width: 30rem;
+}
+
+.margin{
+    box-sizing: border-box;
+    padding-inline: 1rem;
+    padding-top: 2rem;
+}
+
+#tabs ul li{
+    color: black;
+    font-size: 1.2rem;
+    font-weight: 400;
+    transition: font-weight 0.1s ease-in-out;
+}
+
+#tabs ul li:hover{
+    font-weight: bolder;
+    cursor: pointer;
+}
+
+span.dark-color{
+    color: var(--dark-color);
+    padding-right: 1.1rem;
+}
+/* card start */
+.card-container{
+    background: #F6E7FF;
+    height: 20rem;
+    min-width: 20rem;
+    margin-inline: auto auto;
+    margin-top: 3rem;
+    border-radius: 20px;
+    box-shadow: 2px 2px 20px grey;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    padding-inline: 1rem;
+    padding-top: 1rem;
+}
+
+.tag-line{
+    font-size: 4rem;
+    text-transform: uppercase;
+    margin-top: 2rem;
+    font-weight: bolder;
+}
+#card-workflow{
+    height: 13rem;
+    width: 40rem;
+}
+.card-section{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+.card-section span{
+    font-size: 2rem;
+}
+.btn{
+    color: white;
+    background: var(--dark-color);
+    border: none;
+    font-size: 1.5rem;
+    border-radius: 30px;
+    padding-inline: 2rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    margin-inline: auto auto;
+    margin-top: 2rem;
+}
+.lower{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#btn{
+    text-decoration: none;
+    color: white;
+}
+.btn:hover{
+    background: var(--hover-dark-color);
+    cursor: pointer;
+}
+
+.login-text{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.login-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.login-card{
+    background: var(--light-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 30rem;
+    height: 30rem;
+    margin-top: 2rem;
+    border-radius: 2rem;
+}
+
+.ip{
+    min-width: 20rem;
+    min-height: 3rem;
+    border-radius: 2rem;
+    padding-inline: 2rem;
+    border: none;
+    font-size: 20px;
+}
+
+@media screen and (max-width:800px){
+    .header{
+        display: flex;
+        flex-direction: column;
+    }
+    .header section ul{
+        width: 10rem;
+        display: none;
+    }
+    #tag-line{
+        font-size: 1.6rem;
+        margin-top: 5rem;
+    }
+    #card-workflow{
+        height: 7rem;
+        width: 20rem;
+    } 
+    .card-section span{
+        font-size: 1.2rem;
+    }   
+}
+
