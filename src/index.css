@@ -128,9 +128,15 @@ span.dark-color{
 }
 #btn{
     text-decoration: none;
+    background: var(--dark-color);
     color: white;
+    padding-inline: 5rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    border-radius: 10px;
+    font-size: 1.5rem;
 }
-.btn:hover{
+#btn:hover{
     background: var(--hover-dark-color);
     cursor: pointer;
 }
@@ -187,5 +193,8 @@ span.dark-color{
     .card-section span{
         font-size: 1.2rem;
     }   
+    .tag-line{
+        font-size: 2rem;
+    }    
 }
 
