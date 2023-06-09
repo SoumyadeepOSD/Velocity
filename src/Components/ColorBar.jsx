@@ -1,0 +1,1 @@
+const Bar = 0;
