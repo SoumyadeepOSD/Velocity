@@ -1,12 +1,13 @@
 import '../index.css'
 
+
 const Hero = () => {
   return (
     <div className="hero-container">
-        <p className='tag-line'> 
-            <p><span className='dark-color'>Accelerate</span>your</p>
-            <p><span className='dark-color'>development</span>journey</p>
-        </p>
+        <main-headline>
+        <p className='violet'>ACCELERATE YOUR </p>
+        <p className='black'>DEVELOPMENT JOURNEY</p>
+        </main-headline>
     </div>
   )
 }
