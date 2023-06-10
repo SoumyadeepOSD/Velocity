@@ -2,18 +2,7 @@
 import '../index.css';
 import {useState, useEffect} from 'react';
 import { AiOutlineAlignLeft, AiOutlineClose } from 'react-icons/ai';
-
-const useWindowSize = () => {
-  const [ size, setSize ] = useState([window.innerHeight, window.innerWidth]);
-  useEffect(()=>{
-    const handleResize = () => {
-      setSize([window.innerHeight, window.innerWidth]);
-    };
-    window.addEventListener("resize", handleResize);
-  },[]);
-  return size;
-}
-
+import { useWindowSize } from '../Contexts/AppContext';
 
 const Header = () =>
 {
@@ -55,6 +44,5 @@ export default Header;
 
 const Style = {
   menuStyle:{
-
   }
 };
