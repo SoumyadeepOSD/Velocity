@@ -5,7 +5,8 @@
     --hover-dark-color: #3b22ac;
     --light-color: #EED3FF;
     --ivory-black: #1e1b1b;
-    --sky-color:#68e6ff;
+    --sky-color:#68c0ff;
+    --light-pink: #ed93ff;
 }
 
 .rainbow-bar{
@@ -64,6 +65,7 @@ html{
 .tab{
     text-decoration: none;
     color: black;
+    font-weight: bolder;
 }
 .menu{
     display: flex;
@@ -203,7 +205,21 @@ p.white{
     padding-block: 1rem;
     border-radius: 20px;
 }
-
+.mobile-menu{
+    list-style: none;
+    position: absolute;
+    top: 50px;
+    padding: 20%;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    background: linear-gradient(var(--sky-color), var(--light-pink));
+}
+.mobile-menu li{
+    padding-bottom: 1rem;
+}
 @media (max-width: 500px){
     .icons{
         height: 2rem;

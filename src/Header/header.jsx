@@ -40,7 +40,13 @@ const Header = () =>
         istap ?
         (<AiOutlineClose size={30} onClick={Tap}/>):
         (<AiOutlineAlignLeft size={30} onClick={Tap}/>)}
-       {istap ? <p style={{position:'absolute', background:'red',padding:'40%', top:50}}>Hello</p>:null}
+       {istap ? <ul className='mobile-menu'>
+          <li><a className='tab' href="">Services</a></li>
+          <li><a className='tab' href="">Tools</a></li>
+          <li><a className='tab' href="#about-container">About</a></li>
+          <li><a className='tab' href="#contact-container">Contact</a></li>
+        </ul>
+        :null}
       </div>
   )
 }
