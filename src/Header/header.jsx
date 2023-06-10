@@ -35,7 +35,6 @@ const Header = () =>
           <li><a className='tab' href="">Tools</a></li>
           <li><a className='tab' href="#about-container">About</a></li>
           <li><a className='tab' href="#contact-container">Contact</a></li>
-          <li>{width}</li>
         </ul>):
         istap ?
         (<AiOutlineClose size={30} onClick={Tap}/>):
