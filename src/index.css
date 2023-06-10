@@ -5,6 +5,7 @@
     --hover-dark-color: #3b22ac;
     --light-color: #EED3FF;
     --ivory-black: #1e1b1b;
+    --sky-color:#68e6ff;
 }
 
 .rainbow-bar{
@@ -20,6 +21,9 @@
     box-sizing: border-box;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+html{
+    scroll-behavior: smooth;
+}
 .main-container{
     display: flex;
     flex-direction: column;
@@ -32,7 +36,41 @@
     margin-inline: 2rem;
     padding-inline: 1rem;
 }
+.logo{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.fire{
+    height: 2rem;
+    width: 2rem;
+}
+.velocity{
+    margin-top: 1rem;
+    font-weight: bolder;
+}
+.menu-items-horizontal{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    list-style: none;
+    box-sizing: border-box;
+    width: 50%;
+    font-weight: bolder;
+}
 
+.tab{
+    text-decoration: none;
+    color: black;
+}
+.menu{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
 .violet{
     color: var(--dark-color);
     margin-right: 0.6rem;
@@ -128,6 +166,7 @@ p.white{
     align-items: center;
     justify-content: center;
     height: 20rem;
+    margin-bottom: 5rem;
     margin-top: 5rem;
 }
 .description{
@@ -142,16 +181,19 @@ p.white{
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
-    width: clamp(5rem,50rem,20rem);
+    height: 5rem;
+    width: 50rem;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
+    box-shadow: 2px 2px 12px black;
 }
 
 #card-workflow{
-    height: 50%;
-    width: clamp(5rem,50rem,20rem);
+    height: 15rem;
+    width: 50rem;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
+    box-shadow: 2px 2px 12px black;
 }
 #btn{
     background: var(--dark-color);
@@ -166,10 +208,37 @@ p.white{
     .icons{
         height: 2rem;
         width: 2rem;
+        margin-right: 0.5rem;
     }
     .description{
         padding-inline: 3rem;
         font-size: clamp(1rem, -0.875rem + 8.333vw, 1.1rem);
         font-weight: 500;
+    }
+    #card-workflow{
+        height: 50%;
+        width: 20rem;
+    }
+    .card-section{
+        width: 20rem;
+    }
+    .card-container{
+        margin-top: 0rem;
+    }
+    .mobile-menubar{
+        background: linear-gradient(var(--sky-color), var(--dark-color));
+        display: flex;
+        font-weight: bolder;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        list-style: none;
+        box-sizing: border-box;
+        width: 50%;
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+        font-weight: bolder;
+        opacity: 0;
+        visibility: hidden;
     }
 }
