@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import '../index.css';
 import {useState, useEffect} from 'react';
 import { AiOutlineAlignLeft, AiOutlineClose } from 'react-icons/ai';

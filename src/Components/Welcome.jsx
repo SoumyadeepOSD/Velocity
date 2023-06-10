@@ -14,6 +14,7 @@ function Welcome() {
         <p>{name}</p>
         <img src={image} alt="img" />
         <button onClick={SignOut}>log out</button>
+        <p>Hello</p>
     </div>
   )
 }
